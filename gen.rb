@@ -5,21 +5,21 @@
 class Gen < Formula
   desc "A Swiss Army knife CLI tool for developers, packed with useful utilities for daily tasks."
   homepage "https://github.com/aminshahid573/gen"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aminshahid573/gen/releases/download/v1.0.3/gen_darwin_amd64.tar.gz"
-      sha256 "f50e3aad78c63ef917825a99fbd3a0e550ad0db2ab5ebb763200fd29594b0832"
+      url "https://github.com/aminshahid573/gen/releases/download/v1.0.4/gen_darwin_amd64.tar.gz"
+      sha256 "0a9ceaf8e485f1798a06fc4d245dad12b3a1a213c48e30b8eacfcb9886a83a0c"
 
       define_method(:install) do
         bin.install "gen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aminshahid573/gen/releases/download/v1.0.3/gen_darwin_arm64.tar.gz"
-      sha256 "f3e03886de07850136467d34fde18527d9f691fd0e864916853273f005e9dfcd"
+      url "https://github.com/aminshahid573/gen/releases/download/v1.0.4/gen_darwin_arm64.tar.gz"
+      sha256 "f61ff53d3901084b021ac9752f6fbc935e0f6cc6e92d9d8974511d802de7a3f5"
 
       define_method(:install) do
         bin.install "gen"
@@ -29,22 +29,22 @@ class Gen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aminshahid573/gen/releases/download/v1.0.3/gen_linux_amd64.tar.gz"
-      sha256 "26ef0f09f764f48c3f6d044fef2fc969e679a6d26a6987d80b25b4f95cd28a4f"
+      url "https://github.com/aminshahid573/gen/releases/download/v1.0.4/gen_linux_amd64.tar.gz"
+      sha256 "2e394bb4072cfd80e7b205c92d2d93013432356111919e169606bbe81c9f0b4d"
       define_method(:install) do
         bin.install "gen"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/aminshahid573/gen/releases/download/v1.0.3/gen_linux_armv6.tar.gz"
-      sha256 "201f3fe41f08f67ce793074473e4c98e1e1436464a48baf49b212ec9f8bd25c7"
+      url "https://github.com/aminshahid573/gen/releases/download/v1.0.4/gen_linux_armv6.tar.gz"
+      sha256 "7a6c5127dba5cb337d7e655b27c1435404030b1d9a9319041a7818a686f9fabb"
       define_method(:install) do
         bin.install "gen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aminshahid573/gen/releases/download/v1.0.3/gen_linux_arm64.tar.gz"
-      sha256 "a3b13532c947323f81e383e84c4db63cd7878e061bdc2621aa61f50597eebb1d"
+      url "https://github.com/aminshahid573/gen/releases/download/v1.0.4/gen_linux_arm64.tar.gz"
+      sha256 "9ddbbdcb56786b60342be040cd49e33a980628f1abac68b2a57246bd3ca597a4"
       define_method(:install) do
         bin.install "gen"
       end
